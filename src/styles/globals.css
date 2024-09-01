@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --foreground: 0, 0%, 0%;
+        --muted-foreground: 0, 0%, 70%;
+        --background: 0, 0%, 93%;
+        --danger: 1, 60%, 52%;
+        --gray: #949494;
+        color: #000000;
+        background-color: #ececec;
+        font-family: "Space Mono", monospace;
+        font-feature-settings: "calt" off;
+    }
+
+    .dark {
+        --foreground: 0, 0%, 84%;
+        --muted-foreground: 0, 0%, 49%;
+        --background: 218, 20%, 8%;
+        --danger: 1, 77%, 63%;
+        --gray: #686868;
+        color: hsl(var(--foreground));
+        background-color: hsl(var(--background));
+    }
+}
+
+@layer base {
+    ::-webkit-scrollbar {
+        @apply h-1 w-1;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-full;
+    }
+
+    a {
+        @apply underline underline-offset-4 font-bold hover:bg-muted italic;
+    }
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+.blob {
+    background-color: hsl(var(--background));
+    border: 4px solid hsl(var(--foreground));
+    user-select: none;
+    padding: 4px;
+    @apply flex flex-col justify-between;
+}
+
+.btn {
+    @apply italic bg-background border-foreground border-4 hover:bg-foreground hover:text-background active:translate-y-[2px];
+    padding: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s step-start;
+}
+
+input,
+textarea {
+    @apply bg-background border-4 border-foreground;
+    padding: 14px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: .5em;
+    font-weight: 700;
+}
