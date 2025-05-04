@@ -60,7 +60,7 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row gap-y-10 md:gap-y-0 gap-x-10 mt-4 mb-20">
           <div className="flex flex-col w-max text-nowrap">
             <p className='text-2xl'>About me</p>
-            <p>years.length = 18</p>
+            <p>years.length = 19</p>
             <p>origin = 🇵🇱</p>
             <p><span className="text-amber-500">let</span> <span className="text-fuchsia-500">socials</span> = {"{"}</p>
             <p className="ml-6"><span className="text-blue-500">discord</span>: <a href="https://discord.com/users/300619808863682562" target="blank">crqch</a>,</p>
