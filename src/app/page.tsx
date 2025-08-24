@@ -71,6 +71,31 @@ export default function HomePage() {
           <div className="flex flex-col w-full">
             <p className='text-2xl'>Projects</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+<div className="blob">
+                <a href="https://bluemarble.lol/" target="_blank" className="text-xl">Blue Marble website</a>
+<p>an official website for Blue Marble project - a templating tool for wplace.live</p>
+                <div className="flex flex-row items-center gap-x-2">
+                  <p><b>Techstack</b></p>
+<a href="https://github.com/crqch/bluemarble-website" target="_blank">github</a>
+                </div>
+                <List array={["cloudflare workers", "svelte", "tailwindcss", "daisyui", "lucide icons"]} />
+              </div>
+<div className="blob">
+                <a href="https://mathura.info/" target="_blank" className="text-xl">mathura.info</a>
+<p>a database of math problems from past math final exams in Poland with solutions and explanations</p>
+                <div className="flex flex-row items-center gap-x-2">
+                  <p><b>Techstack</b></p>
+                </div>
+                <List array={["elysia", "prisma", "cloudflare pages", "react", "tailwindcss"]} />
+              </div>
+<div className="blob">
+                <a href="https://polski.mathura.info/" target="_blank" className="text-xl">polski.mathura.info</a>
+<p>website for remembering literature related stuff for final exams in Poland</p>
+                <div className="flex flex-row items-center gap-x-2">
+                  <p><b>Techstack</b></p>
+                </div>
+                <List array={["cloudflare pages", "react", "tailwindcss"]} />
+              </div>
               <div className="blob">
                 <p className="text-xl line-through">redacted</p>
                 <p><b>Techstack</b></p>
